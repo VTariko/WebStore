@@ -39,6 +39,10 @@ namespace WebStore.Controllers
         public IActionResult Details(int id)
         {
             EmployeeView employee = _employees.FirstOrDefault(e => e.Id == id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
             return View(employee);
             
         }
