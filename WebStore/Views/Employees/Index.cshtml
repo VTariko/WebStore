@@ -1,0 +1,21 @@
+﻿@using WebStore.Models
+
+@model IEnumerable<WebStore.Models.EmployeeView>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<table>
+    @foreach (EmployeeView item in Model)
+    {
+        <tr>
+            <td>@item.FirstName</td>
+            <td>@item.SurName</td>
+            <td>@item.Patronymic</td>
+            <td>@item.Age</td>
+            <td><a asp-action="Details" asp-route-id="@item.Id">Детали</a></td>
+        </tr>
+    }
+</table>

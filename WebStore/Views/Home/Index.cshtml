@@ -6,15 +6,11 @@
     ViewBag.Title = "Index";
 }
 
-<table>
-    @foreach (EmployeeView item in Model)
-    {
-        <tr>
-            <td>@item.FirstName</td>
-            <td>@item.SurName</td>
-            <td>@item.Patronymic</td>
-            <td>@item.Age</td>
-            <td><a asp-action="Details" asp-route-id="@item.Id">Детали</a></td>
-        </tr>
-    }
-</table>
+@section topsection {
+    @await Html.PartialAsync("Partial/_Slider")
+}
+
+
+@await Html.PartialAsync("Partial/_FeaturesItems")
+@await Html.PartialAsync("Partial/_CategoryTab")
+@await Html.PartialAsync("Partial/_RecommendedItems")

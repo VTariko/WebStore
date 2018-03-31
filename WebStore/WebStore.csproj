@@ -5,22 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Home\Details.cshtml" />
+    <Content Remove="Views\Employees\Details.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Home\Details.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\Home\Details.cshtml" />
+    <None Include="Views\Employees\Details.cshtml" />
     <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
     <None Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
     <None Include="wwwroot\js\contact.js" />
     <None Include="wwwroot\js\gmaps.js" />
     <None Include="wwwroot\js\html5shiv.js" />
-    <None Include="wwwroot\js\jquery.js" />
-    <None Include="wwwroot\js\jquery.prettyPhoto.js" />
     <None Include="wwwroot\js\jquery.scrollUp.min.js" />
     <None Include="wwwroot\js\main.js" />
     <None Include="wwwroot\js\price-range.js" />
@@ -29,6 +23,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
 </Project>
