@@ -18,5 +18,45 @@ namespace WebStore.Controllers
         {
             return View();
         }
+
+        public IActionResult ProductDetails()
+        {
+            return View();
+        }
+
+        public IActionResult BlogList()
+        {
+            return View();
+        }
+
+        public IActionResult BlogSingle()
+        {
+            return View();
+        }
+
+        public IActionResult PageNotFound()
+        {
+            return View();
+        }
+
+        public IActionResult Checkout()
+        {
+            return View();
+        }
+
+        public IActionResult Cart()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
     }
 }
